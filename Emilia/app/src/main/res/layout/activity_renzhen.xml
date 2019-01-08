@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RenzhenActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:title="登陆"
+        app:titleTextColor="@android:color/white"
+        android:layout_height="wrap_content">
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout"
+        android:paddingStart="@dimen/tweenty_four_dp"
+        android:paddingEnd="@dimen/tweenty_four_dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="用户名"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:id="@+id/username"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:hint="密码"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="登陆"
+        android:layout_width="match_parent"
+        android:id="@+id/login_now"
+        android:layout_margin="@dimen/tweenty_four_dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
